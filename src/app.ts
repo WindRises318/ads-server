@@ -1,9 +1,16 @@
-import HyperExpress from 'hyper-express'
 import crypto from "node:crypto";
 
-const API_TOKEN = '7130260995:AAG-4a14xsAfU6sKomjE9ky-hYL1PcZ4oR4'
+import HyperExpress from 'hyper-express'
+import cors from 'cors'
+
+const API_TOKEN = process.env.API_TOKEN || '7130260995:AAG-4a14xsAfU6sKomjE9ky-hYL1PcZ4oR4'
 
 const app = new HyperExpress.Server()
+
+
+app.use(cors({
+    origin: "https://windrises318.github.io"
+}))
 
 
 app.post("/api/login", async (req, resp) => {
@@ -27,6 +34,4 @@ app.post("/api/login", async (req, resp) => {
 })
 
 
-app.listen(3001, '0.0.0.0', () => {
-    console.log("Server is starting: https://localhost:3001")
-})
+app.listen(3001)

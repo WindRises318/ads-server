@@ -2,9 +2,9 @@
   "name": "ads-server",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "app.ts",
   "scripts": {
-    "start": "nodemon --watch src/ -e ts --exec ts-node src/app.ts",
+    "start": "node src/app.ts",
     "build": "tsc && ncc build build/app.js -o ./dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

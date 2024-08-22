@@ -37,7 +37,8 @@ app.post("/api/login", async (req, resp) => {
 })
 
 
-app.listen(3001)
+
+app.listen(3000, () => console.log('Server ready on port 3000.'));
 
 
-export default app
+module.exports = app;

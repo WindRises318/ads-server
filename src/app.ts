@@ -40,4 +40,4 @@ app.post("/api/login", async (req, resp) => {
 app.listen(3001)
 
 
-module.exports = app
+export default app

@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "nodemon --watch src/ -e ts --exec ts-node src/app.ts",
-    "build":"tsc && ncc build build/app.js -o ./dist",
+    "build": "tsc && ncc build build/app.js -o ./dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

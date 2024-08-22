@@ -8,10 +8,13 @@ const API_TOKEN = process.env.API_TOKEN || '7130260995:AAG-4a14xsAfU6sKomjE9ky-h
 const app = new HyperExpress.Server()
 
 
-app.use(cors({
-    origin: "https://windrises318.github.io"
-}))
+// app.use(cors({
+//     origin: "https://windrises318.github.io"
+// }))
 
+app.get("/", (req, res) => {
+    res.json({ code: 200, data: "hello world" })
+})
 
 app.post("/api/login", async (req, resp) => {
     const params = await req.json()

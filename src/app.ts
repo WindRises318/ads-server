@@ -1,7 +1,7 @@
 import crypto from "node:crypto";
 
 import HyperExpress from 'hyper-express'
-import cors from 'cors'
+// import cors from 'cors'
 
 const API_TOKEN = process.env.API_TOKEN || '7130260995:AAG-4a14xsAfU6sKomjE9ky-hYL1PcZ4oR4'
 

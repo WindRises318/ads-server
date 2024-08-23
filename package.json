@@ -2,10 +2,11 @@
   "name": "ads-server",
   "version": "1.0.0",
   "description": "",
-  "main": "app.ts",
+  "main": "./dist/index.js",
   "scripts": {
-    "start": "node src/app.ts",
-    "build": "tsc && ncc build build/app.js -o ./dist",
+    "dev": "node src/app.ts",
+    "start": "node ./dist/index.js",
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
